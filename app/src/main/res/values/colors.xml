@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Benjol Theme-->
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#636363</color>
+    <color name="colorSecondary">#FCCA53</color>
+    <color name="colorInputText">#F2F2F2</color>
+    <color name="colorButton">#FBB308</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorTextDark">#636363</color>
+    <color name="background">#fcca53</color>
+    <color name="colorTitle">#95000000</color>
+    <color name="ongoing">#6c90bd</color>
+    <color name="finish">#62bf76</color>
+    <color name="cancel">#bd4d4d</color>
+</resources>
+

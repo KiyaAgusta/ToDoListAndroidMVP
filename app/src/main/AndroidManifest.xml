@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akiraagusta.android_todo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:name="com.akiraagusta.android_todo.Starter"
+        android:screenOrientation="portrait"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/BenjolTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.akiraagusta.android_todo.modul.register.RegisterActivity" />
+        <activity android:name="com.akiraagusta.android_todo.modul.dashboard.DashboardActivity" />
+        <activity android:name="com.akiraagusta.android_todo.modul.profile.ProfileActivity" />
+        <activity android:name="com.akiraagusta.android_todo.modul.upload_profile_image.UploadProfileImageActivity"/>
+        <activity android:name="com.akiraagusta.android_todo.modul.edit_profile.EditProfileActivity" />
+        <activity android:name="com.akiraagusta.android_todo.modul.add_task.AddTaskActivity" />
+        <activity android:name="com.akiraagusta.android_todo.modul.edit_task.EditTaskActivity" />
+        <activity android:name="com.akiraagusta.android_todo.modul.change_password.ChangePasswordActivity"/>
+        <activity android:name="com.akiraagusta.android_todo.modul.login.LoginActivity"/>
+        <activity android:name="com.akiraagusta.android_todo.modul.main.MainActivity"/>
+        <activity android:name="com.akiraagusta.android_todo.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

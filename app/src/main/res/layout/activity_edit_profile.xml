@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="user"
+            type="com.akiraagusta.android_todo.model.Profile" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorSecondary">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editProfile"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:background="@drawable/layout_drawable"
+            android:layout_marginTop="60dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/fullName"
+                        android:textSize="5pt"
+                        android:textColor="@color/colorTextDark" />
+
+                    <EditText
+                        android:id="@+id/edit_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="@string/fullName"
+                        android:text="@{user.full_name}"
+                        android:drawableStart="@drawable/name_icon"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/email"
+                        android:textSize="5pt"
+                        android:textColor="@color/colorTextDark" />
+
+                    <EditText
+                        android:id="@+id/edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="@string/email"
+                        android:text="@{user.email}"
+                        android:drawableStart="@drawable/email_icon"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/phoneNumberLabel"
+                        android:textSize="5pt"
+                        android:textColor="@color/colorTextDark" />
+
+                    <EditText
+                        android:id="@+id/edit_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="@string/phoneNumberLabel"
+                        android:inputType="number"
+                        android:text="@{user.phone_number}"
+                        android:drawableStart="@drawable/phone_icon"
+                        android:background="@drawable/rounded_edit_text"/>
+
+
+                    <TextView
+                        android:id="@+id/gender_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/genderLabel"
+                        android:textSize="5pt"
+                        android:textColor="@color/colorTextDark" />
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/radio_button">
+                        <RadioButton android:id="@+id/radio_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Male"
+                            android:onClick="onRadioButtonClicked"
+                            android:buttonTint="?attr/colorSecondary"/>
+                        <RadioButton android:id="@+id/radio_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="20dp"
+                            android:text="Female"
+                            android:onClick="onRadioButtonClicked"
+                            android:buttonTint="?attr/colorSecondary"/>
+                        <RadioButton android:id="@+id/radio_other"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Other"
+                            android:onClick="onRadioButtonClicked"
+                            android:buttonTint="?attr/colorSecondary"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/birth_date_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/birthDateLabel"
+                        android:textSize="5pt"
+                        android:textColor="@color/colorTextDark" />
+
+                    <EditText
+                        android:id="@+id/birth_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="left"
+                        android:hint="@string/birthDateLabel"
+                        android:drawableStart="@drawable/calendar_icon"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        android:id="@+id/change_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorButton"
+                        android:textStyle="bold"
+                        android:textSize="8pt"
+                        android:gravity="center"
+                        android:text="@string/changePassword"/>
+
+                    <Button
+                        android:id="@+id/save_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rounded_button"
+                        android:textColor="@color/colorTextDark"
+                        android:text="@string/save"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

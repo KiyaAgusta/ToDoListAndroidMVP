@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Benjol theme. -->
+    <style name="BenjolTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorInputText">@color/colorInputText</item>
+        <item name="colorButton">@color/colorButton</item>
+        <item name="colorText">@color/colorText</item>
+        <item name="colorTextDark">@color/colorTextDark</item>
+        <item name="android:textAllCaps">false</item>
+<!--        <item name="android:windowAnimationStyle">@null</item>-->
+    </style>
+
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="customfontstyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">@color/colorSecondary</item>
+    </style>
+
+    <style name="MyDatePickerSpinnerTheme" parent="android:Theme.Holo.Light.Dialog.NoActionBar.MinWidth">
+        <item name="android:divider">@color/colorSecondary</item>
+    </style>
+
+</resources>

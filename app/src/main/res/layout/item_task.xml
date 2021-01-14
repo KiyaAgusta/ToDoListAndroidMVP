@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="task"
+            type="com.akiraagusta.android_todo.model.Task" />
+
+        <variable
+            name="status"
+            type="com.akiraagusta.android_todo.modul.dashboard.DashboardActivity" />
+    </data>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="20dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/task_due_date"
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{task.due_date}"
+                android:layout_marginStart="250dp"
+                android:textSize="10sp"
+                tools:text="Date"/>
+
+            <CheckBox
+                android:id="@+id/task_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{task.title}"
+                android:checked="@{task.status}"
+                android:textColor="?attr/colorSecondary"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:buttonTint="?attr/colorSecondary"
+                tools:text="Title Place Holder"/>
+
+            <TextView
+                android:id="@+id/task_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{task.description}"
+                android:layout_marginStart="32dp"
+                android:textSize="14sp"
+                android:layout_below="@+id/task_title"
+                tools:text="Description Placeholder"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

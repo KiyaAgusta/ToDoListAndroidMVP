@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorPrimaryDark" format="color" />
+    <attr name="colorSecondary" format="color" />
+    <attr name="colorInputText" format="color" />
+    <attr name="colorButton" format="color" />
+    <attr name="colorText" format="color" />
+    <attr name="colorTextDark" format="color" />
+</resources>

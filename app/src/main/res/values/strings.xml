@@ -1,0 +1,59 @@
+<resources>
+    <!--General-->
+    <string name="app_name">TO DO LIST</string>
+
+    <!--Login & Register-->
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="forgetPassword">Forgot your password ?</string>
+    <string name="login">Sign In</string>
+    <string name="loginText">Enter Your Login Information</string>
+    <string name="registerText">Enter Your Account Details</string>
+    <string name="logout">Sign Out</string>
+    <string name="register">Register</string>
+    <string name="fullName">Full Name</string>
+    <string name="create">Create an Account</string>
+    <string name="google">Sign In With Google</string>
+    <string name="hint_booking_date">Input date here ...*2020-11-30</string>
+    <string name="serviceRingan">Service Ringan</string>
+    <string name="serviceSedang">Service Sedang</string>
+    <string name="serviceBerat">Service Berat</string>
+    <string name="et_problem_placeholder">Type your problem here...</string>
+    <string name="tv_is_pickup">Need pickup service ? (Optional)</string>
+    <string name="pickup_button">Input Pickup Informations</string>
+    <string name="what_problem">What kind of service do you need ?</string>
+    <string name="when">When ?</string>
+    <string name="tv_select_motor">Select Motorcycle</string>
+
+
+    <!--Profile-->
+    <string name="accountLabel">Account</string>
+    <string name="phoneNumberLabel">Phone Number</string>
+    <string name="emailLabel">Email</string>
+    <string name="genderLabel">Gender</string>
+    <string name="birthDateLabel">Birth Date</string>
+    <string name="motorcyclesLabel">Your Motorcycles</string>
+    <string name="editProfileLabel">Edit your profile information.</string>
+    <string name="profileLabel">Profile</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="save">Save</string>
+    <string name="changePassword">Change Password</string>
+    <string name="oldPass">Old Password</string>
+    <string name="newPass">New Password</string>
+    <string name="upload">Click below to select image</string>
+    <string name="signOut">Sign Out</string>
+    <string name="profpic">Edit Profile Picture</string>
+    <string name="label">Click to edit profile.</string>
+    <string name="confirm">Confirm</string>
+
+    <!--Dashboard-->
+    <string name="welcomeTitle">Hi, </string>
+    <string name="profilName">XXXXX</string>
+    <string name="welcomeDesc">Welcome to your to do list app</string>
+    <string name="new_task">New Task</string>
+    <string name="tasks">Tasks</string>
+    <string name="editTask">Edit Task</string>
+    <string name="addTask">Add Task</string>
+    <string name="dueDateLabel">Due Date</string>
+    <string name="reminderLabel">Reminder</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  res/drawable/rounded_square.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp">
+
+    <solid android:color="?attr/colorSecondary" />
+    <!--border radius in dp-->
+    <corners android:radius="25dp" />
+</shape>
